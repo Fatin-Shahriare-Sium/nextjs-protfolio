@@ -1,0 +1,31 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(3px);
+    background-color: #1e1c1cb5 ;
+}
+.navbar-icon{
+    margin-left: 3%;
+}
+.navbar-link{
+    max-width: max-content;
+    display: flex;
+    margin-right: 19%;
+    color: var(--head-color);
+
+}
+.navbar-link p{
+    margin: 0px 5%;
+    cursor: pointer;
+    font-size: 1.7rem;
+    transition: all .3s  ease;
+    font-weight: 500;
+}
+
+.navbar-link p:hover{
+    color: var(--btn-color);
+}

@@ -1,0 +1,35 @@
+.hero-container{
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    height: 91vh;
+   
+}
+.hero-wrapper{
+    margin-left: 3%;
+}
+.hero-hello-text{
+    font-size: clamp(21px,1.7vw,30px);
+    color: var(--head-color);
+
+    font-weight: 700;
+}
+.hero-name-text{
+    font-size:clamp(40px, 8vw, 70px);
+    color: var(--head-color);
+    font-weight: 700;
+}
+.hero-name-rotating{
+    font-size: clamp(23px,3vw,23px);
+    /* font-size: 23px; */
+    color: var(--head-color);
+}
+
+.hero-btn{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    
+}
