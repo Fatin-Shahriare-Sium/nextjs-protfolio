@@ -12,8 +12,21 @@ const Hero = () => {
                 </div>
 
                     <div className="hero-btn">
-                        <button>Get In Touch</button>
-                        <button>Resume</button>
+
+                        <button>
+                            <a href="">
+                                Get In Touch
+                            </a>
+                        </button>
+
+
+                        <button style={{ marginLeft: '7%' }}>
+                            <a href="">
+                                Resume
+                            </a>
+                        </button>
+
+                        {/* <a href="mailto:sium1206@gmail.com">Mail</a> */}
                     </div>
                 </p>
             </div>

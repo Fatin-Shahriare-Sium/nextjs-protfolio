@@ -19,7 +19,8 @@
     font-size:clamp(40px, 8vw, 70px);
     color: var(--head-color);
     font-weight: 700;
-}
+} 
+
 .hero-name-rotating{
     font-size: clamp(23px,3vw,23px);
     /* font-size: 23px; */
@@ -27,9 +28,26 @@
 }
 
 .hero-btn{
-    background-color: red;
+
     display: flex;
     align-items: center;
-    width: 50%;
+    width: clamp(300px,101vh,70%);
+    margin-top: 3%;
+}
+.hero-btn button{
+    background-color: var(--back-color);
+    color: var(--head-color);
+    outline: none;
+    padding: 2.5%;
+    font-size: 2rem;
+    border: 3px solid var(--btn-color) ;
+    margin: 1% 0%;
+    border-radius: 7px;
     
+}
+
+.hero-btn button a:hover{
+    color: var(--btn-color);
+    transition: all .3s ease; 
+
 }
