@@ -5,6 +5,7 @@ import '../styles/icon.css'
 import '../styles/layout.css'
 import '../styles/hero.css'
 import '../styles/navbar.css'
+import '../styles/about.css'
 function MyApp({ Component, pageProps }) {
   return <Layout>
     <Component {...pageProps} />
