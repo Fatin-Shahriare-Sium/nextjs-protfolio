@@ -1,14 +1,8 @@
-import React, { useEffect } from 'react'
 
-import Image from 'next/image.js'
-let sium = require('../assets/ka.jpg')
-import z from '../assets/ka.jpg'
+import React from 'react'
+
 const About = () => {
-    // useEffect(() => {
-    //     let img = document.getElementById('imgx')
-    //     // let urlx = URL.createObjectURL(z)
-    //     img.src = sium
-    // }, [])
+
     return (
         <div className='about-container'>
             <p className='about-headline'>#About</p>
@@ -20,9 +14,9 @@ const About = () => {
                     </p>
                 </div>
                 <div className="about-img">
-                    {/* <img id='imgx' src='/' alt="" /> */}
+
                     <img src="./siumx.jpg" alt="" />
-                    {/* <Image src='./sium.jpg' width='1000' height='300' /> */}
+
 
                 </div>
             </div>

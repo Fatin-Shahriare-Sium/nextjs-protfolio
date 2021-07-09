@@ -1,0 +1,170 @@
+
+/* Skill-section starts */
+
+.skill-section{
+
+    min-height: 100vh;
+    width: 85%;
+    margin: 0px auto;
+}
+
+
+.skill-section__header{
+    font-size:3rem;
+    color: var(--head-color);
+    position: relative;
+}
+
+
+.skill-section__header::after{
+    content: '';
+    position: absolute;
+    height: 2.7px;
+    width: 300px;
+    top: 57%;
+    background-color: var(--btn-color);
+    margin-left: 33px;
+}
+
+.skill-section__subHeader{
+    color: var(--text-color);
+    font-size: 1.9rem;
+    margin-top: 1%;
+}
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 3%;
+    
+}
+/* Skill-section end */
+
+.skill-box{
+    /* width: clamp(50,50%,500px); */
+    width: 47%;
+    /* min-width: 300px; */
+    margin: 1%;
+    display: flex;
+    padding: 13px;
+    border-left: 2px solid var(--btn-color);
+    background-color: #1e1c1cb5;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.skill-box::after{
+    content: '';
+    position: absolute;
+    width: 30%;
+    background:linear-gradient(
+        to right, 
+        #1e1c1cb5 4%,
+        #201F1F 25%,
+        #ffffff 96%
+        
+      );
+
+      height: 100%;
+      top: 0;
+      opacity: 0;
+      left: -7%;
+     
+      transform: skewX(38deg);
+  
+     
+}
+
+.skill-box:hover::after{
+   
+    animation: shinner .5s forwards;
+} 
+
+
+
+
+.skill-box__header{
+    color: var(--head-color);
+    font-size: 2rem;
+}
+.skill-box__main{
+    margin-left: 3%;
+    min-height: 11vh;
+}
+.skill-box__skillWrapper{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    display: flex;
+    
+}
+.skill-box__skillWrapper p{
+    margin-top: 1%;
+}
+/* 
+@keyframes shinner{
+    15%{
+        left: 15%;
+        opacity: 1;
+    }
+    35%{
+        left: 35%;
+        opacity: .55;
+    }
+    55%{
+        left: 55%;
+        opacity: 1;
+    }
+    75%{
+        left: 75%;
+        opacity: .75;
+    }
+    95%{
+        left: 80%;
+        opacity: .55;
+    }
+    100%{
+        left: 87%;
+        opacity: 0;
+    }
+}
+ */
+
+
+
+
+@keyframes shinner{
+  to{
+      left: 100%;
+      opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .skill-container{
+        flex-direction: column;
+       
+    }
+    .skill-box{
+        width: 90%;
+        margin: 1% auto;
+    }
+    .skill-section{
+        margin-top: 7%!important;
+    }
+    .skill-box__skillWrapper{
+        flex-wrap: wrap;
+    }
+}
+
