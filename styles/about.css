@@ -38,14 +38,19 @@
 .about-img{
     flex: .5;
     overflow: hidden;
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .about-img img{
     object-fit: contain;
-    width: 100%;
+    transition: all .3s ease;
+    cursor: pointer;
+  
+}
+.about-img img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
 }
 .about-text p {
     /* font-size: clamp(); */
