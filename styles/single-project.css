@@ -1,0 +1,83 @@
+.single-project{
+
+
+    display: flex;
+
+}
+.single-project-img{
+    flex: .5;
+}
+.single-project-details{
+    flex: .5;
+}
+
+.single-project-img__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.single-project-img__wrapper div img{
+   display: none;
+}
+.single-project-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.project-name{
+    color: var(--head-color);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: end;
+}
+.project-description{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+    background-color: #1e1c1cb5;
+    padding: 25px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-technologies {
+    margin-top: 3%;
+    max-width: max-content;
+    margin-left: auto;
+}
+.project-technologies p{
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+.project-link{
+    margin-top: 3%;
+    background-color: red;
+    display: flex;
+    max-width: max-content;
+    margin-left: auto;
+}
+.project-link svg{
+    margin: 7px;
+}
+
+
+@media screen and (max-width:700px) {
+    .single-project{
+        flex-direction: column;
+    }
+    .single-project-img{
+        display: none;
+    }
+    .single-project{
+        background-image: url('https://res.cloudinary.com/sium/image/upload/v1625940318/Screenshot_2021-07-11_at_00-03-29_React_App_1_xdkxzw.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-color: rgba(0,0,0,.7);
+    }
+    .project-description{
+        background-color:transparent ;
+    }
+}

@@ -7,6 +7,7 @@ import '../styles/hero.css'
 import '../styles/navbar.css'
 import '../styles/about.css'
 import '../styles/skill-box.css'
+import '../styles/single-project.css'
 function MyApp({ Component, pageProps }) {
   return <Layout>
     <Component {...pageProps} />

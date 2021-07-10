@@ -3,7 +3,7 @@ import React from 'react'
 
 const SkillBox = ({ header, textArray, icon, hasArray, currentStackArray }) => {
     return (
-        <div style={hasArray ? { width: '100%!important', minHeight: '27vh!important' } : {}} className='skill-box'>
+        <div style={hasArray ? { width: '100%', minHeight: '27vh!important' } : {}} className='skill-box'>
             <div className="skill-box__icon">
                 <img style={{ height: '30px', width: "30px", objectFit: "contain" }} src={icon} alt="" />
             </div>
