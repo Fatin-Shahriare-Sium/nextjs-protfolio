@@ -7,6 +7,7 @@
     justify-content: space-between;
     backdrop-filter: blur(3px);
     background-color: #1e1c1cb5 ;
+    z-index: 13;
 }
 .navbar-icon{
     margin-left: 3%;

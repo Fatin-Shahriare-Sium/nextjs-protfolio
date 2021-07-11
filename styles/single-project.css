@@ -1,51 +1,125 @@
+/* Project-Section start */
+.project-section{
+    min-height: 100vh;
+    width: 85%;
+    margin: 1% auto;
+}
+
+.project-section__haeder{
+    font-size: 3rem;
+    position: relative;
+    color: var(--head-color);
+}
+
+.project-section__haeder::after{
+    content: '';
+    height: 2.7px;
+    width: 300px;
+    top: 57%;
+    margin-left: 33px;
+    position: absolute;
+    background-color: var(--btn-color);
+}
+
+
+.project-section__container{
+
+}
+
+
+
+
+
+
+
+/* Project-Section end */
 .single-project{
 
-
+    width: 93%;
+    margin: 1% auto;
     display: flex;
-
+    background-size: 0;
+   
 }
 .single-project-img{
     flex: .5;
 }
+
+
 .single-project-details{
     flex: .5;
+    position: relative;
+    right: 7%;
+
 }
+
+
+
+
+
+
+.single-project:nth-child(even) .single-project-img{
+    order: 2;
+
+}
+ .single-project:nth-child(even)  .single-project-details{
+    order: 1;
+    align-items: flex-start!important;
+    left: 7%;
+}
+
 
 .single-project-img__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .7s ease;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
 
+.single-project-img__wrapper:hover{
+    filter: grayscale(0%);
 }
-.single-project-img__wrapper div img{
-   display: none;
-}
+
 .single-project-details{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: flex-end;
 }
 .project-name{
     color: var(--head-color);
     font-size: 3rem;
     font-weight: 700;
     text-align: end;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.project-name:hover{
+    text-shadow:0px 0px 7px var(--btn-color),
+    0px 0px 7px var(--btn-color) ,
+    0px 0px 7px var(--btn-color) ,
+    0px 0px 7px var(--btn-color) ,
+    0px 0px 7px var(--btn-color) ;
 }
 .project-description{
     color: var(--text-color);
     font-size: 1.7rem;
     font-weight: 500;
-    background-color: #1e1c1cb5;
+    background-color: #111533;
     padding: 25px;
     margin-top: 5%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    border-radius: 5px;
+    
 }
 .project-technologies {
     margin-top: 3%;
     max-width: max-content;
-    margin-left: auto;
+
 }
 .project-technologies p{
     color: var(--text-color);
@@ -53,31 +127,76 @@
 }
 .project-link{
     margin-top: 3%;
-    background-color: red;
     display: flex;
     max-width: max-content;
-    margin-left: auto;
+ 
 }
 .project-link svg{
     margin: 7px;
+    cursor: pointer;
 }
 
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1000px) {
     .single-project{
         flex-direction: column;
+        margin: 9% auto;
     }
     .single-project-img{
         display: none;
     }
     .single-project{
-        background-image: url('https://res.cloudinary.com/sium/image/upload/v1625940318/Screenshot_2021-07-11_at_00-03-29_React_App_1_xdkxzw.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-color: rgba(0,0,0,.7);
+      /* box-shadow:rgb(179 255 56 / 10%) -4px -1px 7px 6px; */
+        border-bottom: 3px solid var(--btn-color);
+        
+    }
+
+    .single-project-details{
+        right: 0%;
+        flex: 1;
+        background-color: #1b1a1aa8;
+       align-items: flex-start;
+       z-index: 13;
+    }
+
+    .project-name{
+        text-align: start;
+    }
+   
+    .project-technologies{
+     
+        margin-top: 5%;
+    }
+    .project-technologies p{
+        color: var(--link-color);
+        font-size: 2rem;
     }
     .project-description{
-        background-color:transparent ;
+        font-size: 2.1rem;
+        background-color: transparent;
+        padding: 0px;
+        
     }
+    .project-description p{
+        color: #dad8d8;
+        font-weight: 700;
+        transition: all .7s ease;
+        cursor: pointer;
+    }
+    .project-description p:hover{
+        text-shadow:0px 0px 7px var(--btn-color),
+        0px 0px 7px var(--btn-color) ,
+        0px 0px 7px var(--btn-color) ,
+        0px 0px 7px var(--btn-color) ,
+        0px 0px 7px var(--btn-color) ;
+    
+    }
+    .single-project:nth-child(even)  .single-project-details{
+        left: 0;
+    }
+    
 }

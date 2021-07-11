@@ -4,6 +4,8 @@ import SkillSection from "../component/skill-section"
 // import nextjsBlog from '../assets/nextjs-blog.jpg'
 import Image from 'next/image'
 import SingleProject from "../component/single-project"
+import ProjectSection from "../component/project-section"
+
 
 //nextjs-blog img - https://res.cloudinary.com/sium/image/upload/v1625911072/nextjs-blog_jxei2f.jpg
 //e-commerce img - https://res.cloudinary.com/sium/image/upload/v1625911762/Screenshot_2021-07-10_at_16-02-09_https_nextjs-e-commerce-two_vercel_app_1_ohiumh.png
@@ -20,7 +22,7 @@ export default function Home() {
       <Hero />
       <About />
       <SkillSection />
-      <SingleProject />
+      <ProjectSection />
 
     </div>
   )
