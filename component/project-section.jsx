@@ -43,7 +43,7 @@ const ProjectSection = () => {
             title: 'Nextjs Blog',
             img: 'https://res.cloudinary.com/sium/image/upload/v1625911072/nextjs-blog_jxei2f.jpg',
             description: "A modern blog website.It has on page SEO and SSR.It is a great website for SEO Rankings.I build dasboard from scratch for this blog website to maintain post .This app's frontEnd is created using Nextjs .For,backend [dasboard/CMS] i use ReactJs,Nodejs,Expressjs and for database MongoDB",
-            technologies: ' Reactjs . . Nodejs . MongoDB . Expressjs ',
+            technologies: ' Reactjs . Disqus . Nodejs . MongoDB . Expressjs ',
             link: {
                 github: 'https://github.com/Fatin-Shahriare-Sium/nextjs-blog',
                 website: 'https://nextjs-blog-lovat-xi.vercel.app/'
@@ -61,7 +61,7 @@ const ProjectSection = () => {
         }
     ]
     return (
-        <div className='project-section'>
+        <div id='project' className='project-section'>
             <p className="project-section__haeder">#Projects</p>
             <div className="project-section__container">
                 {projectData.map((sig, index) => <SingleProject name={sig.title} img={sig.img} description={sig.description} tech={sig.technologies} link={sig.link} />)}

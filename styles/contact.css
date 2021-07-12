@@ -100,4 +100,8 @@
     .contact-wrapper a{
         margin: 1% auto;
     }
+    .contact-section__header::after{
+        width: 203px;
+    }
+
 }

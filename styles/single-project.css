@@ -160,7 +160,7 @@
         flex: 1;
         background-color: #1b1a1aa8;
        align-items: flex-start;
-       z-index: 13;
+      
     }
 
     .project-name{
@@ -198,5 +198,7 @@
     .single-project:nth-child(even)  .single-project-details{
         left: 0;
     }
-    
+    .project-section__haeder::after{
+        width: 203px;
+    }
 }

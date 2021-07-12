@@ -1,8 +1,14 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import GithubIcon from './icon/githubIcon';
-
+import menu from '../assets/menu.svg'
+import OffcanvasNavbar from './offcanvas-navbar';
 const Navbar = () => {
+    let [show, setShow] = useState(false)
+
+    function toggleOffcanvas() {
+        return setShow(pre => !pre)
+    }
     return (
         <div className='navbar'>
             <div className="navbar-icon">
@@ -10,14 +16,32 @@ const Navbar = () => {
             </div>
             <div className="navbar-link">
 
-                <p>Home</p>
-                <p>About</p>
-                <p>Skills</p>
-                <p>Projects</p>
-                <p>Contact</p>
+                <a href="#home">
+                    <p>Home</p>
+                </a>
+
+                <a href="#about">
+                    <p>About</p>
+                </a>
+
+                <a href="#skill">
+                    <p>Skills</p>
+                </a>
+
+                <a href="#project">
+                    <p>Projects</p>
+                </a>
+
+                <a href="#contact">
+                    <p>Contact</p>
+                </a>
 
 
             </div>
+            <div className='menu-icon'>
+                <img style={{ height: '19px', width: '19px' }} onClick={toggleOffcanvas} src={menu} alt="" />
+            </div>
+            <OffcanvasNavbar off={show} togglehandler={toggleOffcanvas} />
         </div>
     )
 }

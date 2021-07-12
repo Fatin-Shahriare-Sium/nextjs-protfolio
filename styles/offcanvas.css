@@ -1,0 +1,56 @@
+.offcanvas{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    height: 100vh;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.offcanvas-wrapper{
+    background-color: var(--back-color);
+    width: 77%;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+.offcanvas-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.offcanvas-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    margin-top: 3%;
+
+
+}
+.offcanvas-body p{
+    font-size: 2.7rem;
+    color: var(--head-color);
+    margin: 5% 0px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.offcanvas-body p:hover{
+    color: var(--btn-color);
+}
+
+.offcanvas-shower{
+    right: 0;
+}
+
+@media screen and (max-width:700px) {
+    .offcanvas{
+        opacity: 1;
+    }
+}

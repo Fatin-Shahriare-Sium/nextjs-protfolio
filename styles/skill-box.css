@@ -167,5 +167,9 @@
     .skill-box__skillWrapper{
         flex-wrap: wrap;
     }
+    .skill-section__header::after{
+        width: 213px;
+      
+    }
 }
 

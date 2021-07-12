@@ -53,7 +53,7 @@ const SkillSection = () => {
         }
     ]
     return (
-        <div className='skill-section'>
+        <div id='skill' className='skill-section'>
             <p className='skill-section__header'>#Skills</p>
             <p className='skill-section__subHeader'>In my career of coding/programming,i have learned these technologies :</p>
 

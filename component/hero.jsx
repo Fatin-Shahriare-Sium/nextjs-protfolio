@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div className='hero-container'>
+        <div id='home' className='hero-container'>
             <div className="hero-wrapper">
                 <p className='hero-hello-text'>Hello,I am</p>
                 <p className='hero-name-text'>Fatin Shahriare Sium</p>

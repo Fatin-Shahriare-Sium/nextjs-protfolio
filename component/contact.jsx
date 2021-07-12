@@ -4,7 +4,7 @@ import GithubIcon from './icon/githubIcon';
 
 const ContactSection = () => {
     return (
-        <div className='contact-section'>
+        <div id='contact' className='contact-section'>
             <p className='contact-section__header'>#Contact</p>
             <div className="contact-wrapper">
                 <ContactSingleBox Svg={<GithubIcon />} link={{ topic: 'Github', href: 'https://github.com/Fatin-Shahriare-Sium', cover: '/Fatin-Shahriare-Sium', color: 'white' }} />

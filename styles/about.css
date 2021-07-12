@@ -66,4 +66,7 @@
     .about-img{
         margin-top: 7%;
     }
+    .about-headline::after{
+        width: 213px;
+    }
 }
