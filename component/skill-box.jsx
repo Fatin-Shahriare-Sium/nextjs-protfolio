@@ -1,9 +1,25 @@
 
-import React from 'react'
+import { motion } from 'framer-motion'
+import React, { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
+
 
 const SkillBox = ({ header, textArray, icon, hasArray, currentStackArray }) => {
+    let { ref, inView, entries } = useInView()
+
+    let [skillBox, setSkillBox] = useState(true)
+
+    useEffect(() => {
+        setSkillBox(inView)
+    }, [inView])
+
     return (
-        <div style={hasArray ? { width: '100%', minHeight: '27vh!important' } : {}} className='skill-box'>
+        <motion.div
+            initial={{ y: 330, opacity: 0 }}
+            animate={skillBox ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: .5, ease: 'easeInOut' }}
+
+            ref={ref} style={hasArray ? { width: '100%', minHeight: '27vh!important' } : {}} className='skill-box'>
             <div className="skill-box__icon">
                 <img style={{ height: '30px', width: "30px", objectFit: "contain" }} src={icon} alt="" />
             </div>
@@ -18,7 +34,7 @@ const SkillBox = ({ header, textArray, icon, hasArray, currentStackArray }) => {
                         <p>{textArray}</p>}
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

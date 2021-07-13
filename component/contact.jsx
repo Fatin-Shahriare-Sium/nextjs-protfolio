@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ContactSingleBox from './contact-single-box'
 import GithubIcon from './icon/githubIcon';
 
 const ContactSection = () => {
+
+
+
     return (
         <div id='contact' className='contact-section'>
             <p className='contact-section__header'>#Contact</p>

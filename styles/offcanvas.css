@@ -7,6 +7,7 @@
     top: 0;
     right: -100%;
     transition: all .3s ease;
+    display: none;
     opacity: 0;
 }
 .offcanvas-wrapper{
@@ -34,14 +35,14 @@
 
 
 }
-.offcanvas-body p{
+.offcanvas-body a{
     font-size: 2.7rem;
     color: var(--head-color);
     margin: 5% 0px;
     cursor: pointer;
     transition: all .3s ease;
 }
-.offcanvas-body p:hover{
+.offcanvas-body a:hover{
     color: var(--btn-color);
 }
 
@@ -52,5 +53,6 @@
 @media screen and (max-width:700px) {
     .offcanvas{
         opacity: 1;
+        display: block;
     }
 }

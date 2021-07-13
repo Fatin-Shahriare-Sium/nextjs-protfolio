@@ -2,6 +2,12 @@
 .github-icon,.facebook-icon,.linkedin-icon svg{
     /* width: 400px; */
     fill: #ffffff;
+    transition: all .3s ease;
+    cursor: pointer;
+}
 
+.github-icon:hover,.facebook-icon:hover,.linkedin-icon:hover svg{
+    fill: var(--btn-color);
+    
 }
 

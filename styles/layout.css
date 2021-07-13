@@ -66,7 +66,27 @@
     font-size: 2rem;
     font-weight: 700;
     color: var(--head-color);
+    position: relative;
+    overflow: hidden;
 }
+.Allahisalmighty::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--back-color);
+    animation: revealer .7s linear forwards;
+}
+
+@keyframes revealer{
+    to{
+        left: 100%;
+    }
+}
+
+
 .left-floating__icon::after{
     content: '';
     position: absolute;

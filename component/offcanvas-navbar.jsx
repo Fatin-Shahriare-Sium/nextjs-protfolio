@@ -14,11 +14,25 @@ const OffcanvasNavbar = ({ off, togglehandler }) => {
                 <div className="offcanvas-body">
 
 
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Skills</p>
-                    <p>Projects</p>
-                    <p>Contact</p>
+                    <a onClick={togglehandler} href="#home">
+                        <p>Home</p>
+                    </a>
+
+                    <a onClick={togglehandler} href="#about">
+                        <p>About</p>
+                    </a>
+
+                    <a onClick={togglehandler} href="#skill">
+                        <p>Skills</p>
+                    </a>
+
+                    <a onClick={togglehandler} href="#project">
+                        <p>Projects</p>
+                    </a>
+
+                    <a onClick={togglehandler} href="#contact">
+                        <p>Contact</p>
+                    </a>
 
 
                 </div>
