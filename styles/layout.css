@@ -102,4 +102,7 @@
     .left-floating ,.right-floating{
         display: none;
     }
+    /* .layout{
+        overflow-x: hidden;
+    } */
 }

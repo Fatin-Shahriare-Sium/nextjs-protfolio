@@ -13,13 +13,49 @@
     font-size: clamp(21px,1.7vw,30px);
     color: var(--head-color);
 
-    font-weight: 700;
 }
 .hero-name-text{
-    font-size:clamp(40px, 8vw, 70px);
+    /* font-size:clamp(40px, 8vw, 70px); */
     color: var(--head-color);
-    font-weight: 700;
+
+    width: 103%;
+
 } 
+
+.hero-name-text span{
+    /* transition: all 1.3s ease; */
+    font-size:clamp(40px, 8vw, 70px)!important;
+    font-weight: 700!important;
+    
+}
+
+
+.rotate-span{
+    transition: all 1.3s ease;
+    transform: rotate(77deg);
+    display: inline-block;
+    font-size: 4rem!important;
+    font-weight: 500!important;
+    
+}
+
+span.red{
+
+    transform: rotate(0deg);
+    font-size:clamp(40px, 8vw, 70px);
+    opacity: 1!important;
+    display: inline;
+    font-weight: 700;
+    
+   
+}
+
+@keyframes textColor{
+    to{
+        color: green;
+    }
+}
+
 .hero-name-rotating__container{
     max-height: max-content;
     width: 100%;
@@ -41,30 +77,7 @@
     color: var(--head-color);
     font-weight: 500;
     position: relative;
-
-}
-
-.hero-text-swapper p::after{
-    content: 'JavaScript Developer';
-    position: absolute;
-    font-size: clamp(23px,3vw,23px);
-    top: 0;
-    animation: alt 3s  infinite;
-    transform-origin: bottom;
-    animation-timing-function: ease;
-    
-}
-
-
-@keyframes alt{
-    50%{
-        content:'MERN Stack';
-    }
-    100%{
-        content: 'Freelancer';
-    }
-  
-
+    animation: rotateWords 13s ease infinite;
 }
 
 
@@ -72,68 +85,30 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* 
  @keyframes rotateWords{
     17%{
-        opacity: 1;
+      
         transform: translateY(0px);
+        /* background: linear-gradient(to left,#F7F614 60%,#ffffff 50% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; */
     }47%{
-        opacity: 1;
+        
         transform: translateY(-32px);
-    }87%{
-        opacity: 1;
+    }77%{
+       
         transform: translateY(-64px);
      
     }100%{
-        opacity: 0;
-        transform: translateY(0px);
+        
+        
   
         
     }
    
 }  
- */
 
 
-
-/* 
-.hero-text-swapper p:nth-child(2){
-   animation-delay: 3s;
-} */
-
-
-
-
-/* @keyframes tagOne{
-    to{
-        transform: translateY(-32px);
-        opacity: 0;
-    }
-}
-
-@keyframes tagTwo{
-    to{
-        transform: translateY(-64px);
-        opacity: 0;
-    }
-}
-
-@keyframes tagThree{
-    to{
-        transform: translateY(-96px);
-        opacity: 0;
-    }
-} */
 
 
 
