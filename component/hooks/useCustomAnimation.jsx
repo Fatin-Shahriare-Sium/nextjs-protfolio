@@ -38,15 +38,66 @@ const UseCustomAnimation = () => {
 
     function decodeText(textDom) {
 
-        let randomText = ['%', '3', 'f', '$', '@', '!', 'p', 'a', 's']
+        let randomText = ['%', '3', 'f', '$', '@', '!', 'p', 'a', 's', '*', '^', '0', '艾', '天', '小', '子', '錫', '杰', '&', '/']
 
-        console.log(randomText.sort(() => Math.random()));
+        let textArray = textDom.textContent.split('')
+
+        textDom.textContent = ''
+
+        for (var i = 0; i < randomText.length; i++) {
+            textDom.innerHTML += `<span>${randomText[i]}</span>`
+        }
+        let index = 0
+
+        let decodeCleaner = setInterval(decodeTextFun, 55)
+
+
+
+        const sleep = (milliseconds) => {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+        }
+
+        console.log(textDom.childNodes[textArray.length - 1]);
+        async function decodeTextFun() {
+            let suffledRandomText = randomText.sort(() => Math.random() - 0.5)
+
+            for (var i = 0; i < suffledRandomText.length; i++) {
+                await sleep(10)
+                textDom.childNodes[index].textContent = i == suffledRandomText.length - 1 ? textArray[index] : suffledRandomText[i]
+                // textDom.childNodes[index].className = 'decode-text'
+
+
+
+                if (i == suffledRandomText.length - 1 && index < 19) {
+
+                    index++
+                }
+                else if (index == '19') {
+
+                    console.log('cleadrinterval', index);
+                    textDom.childNodes[textArray.length - 1].textContent = 'm'
+
+                    setTimeout(() => {
+                        textDom.textContent = 'Fatin Shahriare Sium'
+                        textDom.className = 'decode-text'
+                    }, 500)
+                    return clearInterval(decodeCleaner)
+
+
+
+                }
+
+            }
+        }
+
+
+
     }
 
 
 
 
-    return { changeText }
+    return { changeText, decodeText }
 }
 
 export default UseCustomAnimation;

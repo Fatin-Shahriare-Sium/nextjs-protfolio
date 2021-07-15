@@ -4,59 +4,14 @@ import UseCustomAnimation from './hooks/useCustomAnimation'
 
 const Hero = () => {
 
-    let { changeText } = UseCustomAnimation()
+    let { changeText, decodeText } = UseCustomAnimation()
 
 
     useEffect(() => {
         // changeText(document.getElementById('hero-text'))
-
-        let textDom = document.getElementById('hero-text')
-        let textArray = textDom.textContent.split('')
-        textDom.textContent = ''
-        let randomText = ['%', '3', 'f', '$', '@', '!', 'p', 'a', 's', '*', '^', '0', '艾', '天', '小', '子', '錫', '杰', '&', '/']
+        decodeText(document.getElementById('hero-text'))
 
 
-        for (var i = 0; i < randomText.length; i++) {
-            textDom.innerHTML += `<span>${randomText[i]}</span>`
-        }
-
-        let decodeTextInterval = setInterval(decodeTextFun, 50)
-        let index = 0
-
-        const sleep = (milliseconds) => {
-            return new Promise(resolve => setTimeout(resolve, milliseconds))
-        }
-
-        console.log(textArray.length);
-        console.log(randomText.length);
-
-
-        async function decodeTextFun() {
-            let suffledRandomText = randomText.sort(() => Math.random() - .5)
-
-            for (var i = 0; i < suffledRandomText.length; i++) {
-                await sleep(10)
-
-                textDom.childNodes[index].textContent = i == suffledRandomText.length - 1 ? textArray[index] : suffledRandomText[i]
-                textDom.childNodes[index].className = 'decode-text'
-
-                if (i == suffledRandomText.length - 1 && index < 19) {
-                    index++
-                    console.log(suffledRandomText[19]);
-                } else if (index == '19') {
-                    console.log('clearinterval');
-                    clearInterval(decodeTextInterval)
-                }
-
-            }
-
-
-            // console.log(index);
-            // await sleep(11)
-            // index++;
-
-
-        }
 
 
 
