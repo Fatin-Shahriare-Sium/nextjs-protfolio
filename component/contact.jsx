@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import ContactSingleBox from './contact-single-box'
 import GithubIcon from './icon/githubIcon';
 
 const ContactSection = () => {
     //text animation - https://speckyboy.com/css-javascript-text-animation-snippets/
-    //法 廷·沙 裡 亞 爾 錫 子 以 去 小 天 然 杰  錫 子 艾 儿
+
 
     return (
         <div id='contact' className='contact-section'>
@@ -22,24 +22,7 @@ const ContactSection = () => {
                     link={{ topic: 'Linkedin', href: '', cover: '/', color: '#0077b5' }}
                 />
             </div>
-            <p className='Allah'>
-                <span>A</span><span>L</span>
-                <span>L</span>
-                <span>A</span>
-                <span>H</span>
 
-                <span>I</span>
-                <span>S</span>
-
-                <span>A</span>
-                <span>L</span>
-                <span>M</span>
-                <span>I</span>
-                <span>G</span>
-                <span>H</span>
-                <span>T</span>
-                <span>Y</span>
-            </p>
         </div >
     )
 }

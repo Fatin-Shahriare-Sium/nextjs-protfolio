@@ -1,0 +1,96 @@
+.opener{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-color);
+    animation: remove .7s 3s forwards;
+}
+.opener .opener-wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: max-content;
+
+}
+.opener .opener-wrapper svg{
+    height: 157px;
+    width: 300px;
+    margin: 0px auto;
+
+   
+}
+.opener-wrapper #Group-1 #i{
+    z-index: -4;
+   
+}
+.opener-wrapper #Group-1 #s,#i,#u,#m{
+    stroke-width: 3px;
+    stroke: #ffffff;
+    fill: transparent;
+    transition: all .3s ease;
+    stroke-dasharray: 230;
+    stroke-dashoffset: 230;
+    animation: animateSVG 1s 1.4s linear forwards,
+    x .3s 2.6s forwards;
+}
+
+@keyframes animateSVG{
+ 
+    to{
+        stroke-dasharray:0 ;
+    stroke-dashoffset: 0;
+    stroke-width: 0;
+    
+    }
+}
+
+@keyframes x{
+    to{
+        fill: white;
+    }
+}
+
+@keyframes remove{
+    to{
+        top: -100%;
+    }
+}
+
+.opener-wrapper p{
+    font-size: clamp(43px,5vw,70px);
+    font-weight: 700;
+    color: var(--head-color);
+    overflow: hidden;
+    position: relative;
+}
+.opener-wrapper p::after{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: var(--back-color);
+    animation:removeOverlap 1.3s forwards ;
+}
+
+@keyframes removeOverlap{
+    to{
+        left: 100%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .opener .opener-wrapper svg{
+        width: 170px;
+        height: 130px;
+    }
+}

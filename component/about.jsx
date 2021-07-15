@@ -2,13 +2,18 @@
 import React, { useEffect, useState } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+
+
 const About = () => {
+
     let { ref, inView, entry } = useInView()
+
 
     let [aboutScetion, setAboutSection] = useState(false)
 
     useEffect(() => {
         setAboutSection(inView)
+        // console.log(useInView);
     }, [inView])
 
 

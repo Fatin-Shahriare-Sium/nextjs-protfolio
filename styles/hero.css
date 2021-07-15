@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
     height: 91vh;
+    background-image: url(../assets/home-bg.svg);
+    background-repeat: no-repeat;
+    background-position:right;
    
 }
 .hero-wrapper{
@@ -77,25 +80,6 @@ span.red{
     }
 }
 
-/* @keyframes textGradient{
-    30%{
-        background:linear-gradient(to left,#42F40D 30% ,#0D90F4 60% );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    60%{
-        background:linear-gradient(to left,#F4290D  ,#0D90F4 );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    90%{
-        background:linear-gradient(to left,#F4290D  , #0D40F4  );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-       
-    }
-} */
-
 @keyframes textGradient{
   
   70%{
@@ -140,9 +124,7 @@ span.red{
     17%{
       
         transform: translateY(0px);
-        /* background: linear-gradient(to left,#F7F614 60%,#ffffff 50% );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; */
+       
     }47%{
         
         transform: translateY(-32px);
@@ -186,4 +168,10 @@ span.red{
     color: var(--btn-color);
     transition: all .3s ease; 
 
+}
+
+@media screen and (max-width:500px) {
+    .hero-container{
+        background-size: 0;
+    }
 }

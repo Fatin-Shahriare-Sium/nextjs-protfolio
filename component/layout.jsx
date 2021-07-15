@@ -1,5 +1,5 @@
 
-import React from 'react'
+
 import GithubIcon from './icon/githubIcon';
 import Navbar from './navbar';
 const Layout = ({ children }) => {
@@ -23,6 +23,9 @@ const Layout = ({ children }) => {
                 <div className='right-floating__text'>
                     <p>sium1206@gmail.com</p>
                 </div>
+            </div>
+            <div style={{ height: '.3vh' }}>
+
             </div>
         </div>
     )

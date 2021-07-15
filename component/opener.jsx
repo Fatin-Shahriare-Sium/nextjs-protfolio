@@ -1,26 +1,11 @@
+import React from 'react'
 
-import React, { useEffect, useState } from 'react'
-
-import menu from '../assets/menu.svg'
-import logo from '../assets/logo.svg'
-import OffcanvasNavbar from './offcanvas-navbar';
-const Navbar = () => {
-    let [show, setShow] = useState(false)
-
-    function toggleOffcanvas() {
-        return setShow(pre => !pre)
-    }
-
-    useEffect(() => {
-        let s = document.getElementById('s')
-        console.log(s);
-    }, [])
-
+const Opener = () => {
     return (
-        <div className='navbar'>
-            <div className="navbar-icon">
-                {/* <img style={{ width: '63px', height: '63px' }} src={logo} alt="" /> */}
-                <svg width="77" height="77" viewBox="0 0 177 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div className='opener'>
+            <div className='opener-wrapper'>
+                <p>Allah is Almighty</p>
+                <svg viewBox="0 0 177 99" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="Plugin icon - 1" clip-path="url(#clip0)">
                         <rect width="177" height="99" fill="transparent" />
                         <g id="Group-1">
@@ -36,38 +21,9 @@ const Navbar = () => {
                         </clipPath>
                     </defs>
                 </svg>
-
             </div>
-            <div className="navbar-link">
-
-                <a href="#home">
-                    <p>Home</p>
-                </a>
-
-                <a href="#about">
-                    <p>About</p>
-                </a>
-
-                <a href="#skill">
-                    <p>Skills</p>
-                </a>
-
-                <a href="#project">
-                    <p>Projects</p>
-                </a>
-
-                <a href="#contact">
-                    <p>Contact</p>
-                </a>
-
-
-            </div>
-            <div className='menu-icon'>
-                <img style={{ height: '19px', width: '19px' }} onClick={toggleOffcanvas} src={menu} alt="" />
-            </div>
-            <OffcanvasNavbar off={show} togglehandler={toggleOffcanvas} />
         </div>
     )
 }
 
-export default Navbar;
+export default Opener;

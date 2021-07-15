@@ -1,14 +1,14 @@
 
 
-import React from 'react'
+
 import GithubIcon from './icon/githubIcon'
-import figma from '../assets/figma.svg'
+import logo from '../assets/logo.svg'
 const OffcanvasNavbar = ({ off, togglehandler }) => {
     return (
         <div className={off ? 'offcanvas offcanvas-shower' : 'offcanvas'}>
             <div className="offcanvas-wrapper">
                 <div className="offcanvas-header">
-                    <img src={figma} alt="" />
+                    <img style={{ height: '37px', width: '77px' }} src={logo} alt="" />
                     <p onClick={togglehandler} style={{ fontSize: '2rem', fontWeight: '700', color: 'var(--head-color)', marginRight: '13px', cursor: 'pointer' }}>X</p>
                 </div>
                 <div className="offcanvas-body">
