@@ -1,14 +1,19 @@
 .offcanvas{
     background-color: rgba(0,0,0,.5);
-    position: fixed;
     height: 100vh;
     z-index: 100;
     width: 100%;
+    position: fixed;
     top: 0;
     right: -100%;
-    transition: all .3s ease;
-    display: none;
+    /* transition: all 1s ease; */
+    display: block;
     opacity: 0;
+
+}
+.hidden{
+    display: none;
+
 }
 .offcanvas-wrapper{
     background-color: var(--back-color);
@@ -48,11 +53,23 @@
 
 .offcanvas-shower{
     right: 0;
+    opacity: 1;
+    display: block;
+
+    
 }
 
-@media screen and (max-width:700px) {
-    .offcanvas{
+@keyframes bringOffcanvas{
+    to{
+        right: 0;
         opacity: 1;
         display: block;
     }
 }
+
+/* @media screen and (max-width:700px) {
+    .offcanvas{
+        opacity: 1;
+        display: block;
+    }
+} */

@@ -1,11 +1,11 @@
 
 
-
-import GithubIcon from './icon/githubIcon'
+import { useEffect } from 'react'
 import logo from '../assets/logo.svg'
 const OffcanvasNavbar = ({ off, togglehandler }) => {
+
     return (
-        <div className={off ? 'offcanvas offcanvas-shower' : 'offcanvas'}>
+        <div id='off-canvas' className={off ? 'offcanvas offcanvas-shower' : 'offcanvas hidden'}>
             <div className="offcanvas-wrapper">
                 <div className="offcanvas-header">
                     <img style={{ height: '37px', width: '77px' }} src={logo} alt="" />
