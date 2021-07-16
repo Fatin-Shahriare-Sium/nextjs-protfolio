@@ -1,7 +1,7 @@
 
 import Layout from '../component/layout'
-import '../styles/layout.css'
 
+import '../styles/opener.css'
 import { useEffect } from 'react'
 
 function MyApp({ Component, pageProps }) {
@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
     import('../styles/globals.css').then(({ default: style }) => {
       return style
     })
-    import('../styles/opener.css').then(({ default: style }) => {
+    import('../styles/layout.css').then(({ default: style }) => {
       return style
     })
     import('../styles/hero.css').then(({ default: style }) => {

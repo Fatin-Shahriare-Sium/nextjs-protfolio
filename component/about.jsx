@@ -26,7 +26,7 @@ const About = () => {
                     animate={aboutScetion ? { x: 0 } : {}}
                     transition={{ duration: 1, ease: 'easeInOut' }}
                     className="about-text">
-                    <p>I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.
+                    <p>I am <b>Fatin Shahriare Sium</b>.I have been able to learn web design and development by the grace of <b>Allah</b>.I am professional developer specialized on JavaScript-based technologies.
                         I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies.
 
                     </p>
@@ -37,7 +37,7 @@ const About = () => {
                     transition={{ duration: 2, ease: 'easeInOut' }}
                     className="about-img">
 
-                    <img src="./static/siumx.jpg" alt="" />
+                    <img src="./siumx.jpg" alt="" />
 
 
                 </motion.div>
