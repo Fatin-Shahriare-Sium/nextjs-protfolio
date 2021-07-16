@@ -37,7 +37,7 @@ const About = () => {
                     transition={{ duration: 2, ease: 'easeInOut' }}
                     className="about-img">
 
-                    <img src="./siumx.jpg" alt="" />
+                    <img src="./siumx.jpg" alt="Fatin shahriare sium" />
 
 
                 </motion.div>
