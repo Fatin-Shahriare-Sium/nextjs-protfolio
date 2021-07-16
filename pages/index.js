@@ -61,13 +61,13 @@ export default function Home() {
           <meta property='og:type' content='website' />
           <meta property='og:site_name' content='Fatin Shahriare Sium' />
           <meta property='og:title' content='Fatin Shahriare Sium' />
-          <meta property='og:image' content='./siumx.jpg' />
+          <meta property='og:image' content='/siumx.jpg' />
           <meta property="og:image:alt" content="Fatin shahriare sium" />
           <meta property='og:description' content='I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies.' />
           <meta property="og:url" content="" />
           <meta property='twitter:title' content='Fatin Shahriare Sium' />
           <meta property="twitter:description" content="I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies. " />
-          <meta property='twitter:img' content='./siumx.jpg' />
+          <meta property='twitter:img' content='/siumx.jpg' />
           <meta property="twitter:card" content="summary_large_image" />
           <meta name="twitter:image:alt" content="Fatin shahriare sium" />
         </Head>
@@ -89,13 +89,13 @@ export default function Home() {
           <meta property='og:type' content='website' />
           <meta property='og:site_name' content='Fatin Shahriare Sium' />
           <meta property='og:title' content='Fatin Shahriare Sium' />
-          <meta property='og:image' content='./siumx.jpg' />
+          <meta property='og:image' content='/siumx.jpg' />
           <meta property="og:image:alt" content="Fatin shahriare sium" />
           <meta property='og:description' content='I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies.' />
           <meta property="og:url" content="" />
           <meta property='twitter:title' content='Fatin Shahriare Sium' />
           <meta property="twitter:description" content="I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies. " />
-          <meta property='twitter:img' content='./siumx.jpg' />
+          <meta property='twitter:img' content='/siumx.jpg' />
           <meta property="twitter:card" content="summary_large_image" />
           <meta name="twitter:image:alt" content="Fatin shahriare sium" />
         </Head>
