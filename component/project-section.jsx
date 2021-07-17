@@ -42,7 +42,7 @@ const ProjectSection = () => {
         {
             title: 'Nextjs Blog',
             img: 'https://res.cloudinary.com/sium/image/upload/v1625911072/nextjs-blog_jxei2f.jpg',
-            description: "A modern blog website.It has on page SEO and SSR.It is a great website for SEO Rankings.I build dasboard from scratch for this blog website to maintain post .This app's frontEnd is created using Nextjs .For,backend [dasboard/CMS] i use ReactJs,Nodejs,Expressjs and for database MongoDB",
+            description: "A modern blog website.It has on page SEO and SSR.It is a great website for SEO Rankings.I build dashboard from scratch for this blog website to maintain post .This app's frontEnd is created using Nextjs .For,backend [dashboard/CMS] i use ReactJs,Nodejs,Expressjs and for database MongoDB",
             technologies: ' Reactjs . Disqus . Nodejs . MongoDB . Expressjs ',
             link: {
                 github: 'https://github.com/Fatin-Shahriare-Sium/nextjs-blog',
