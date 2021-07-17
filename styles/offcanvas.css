@@ -5,14 +5,15 @@
     width: 100%;
     position: fixed;
     top: 0;
-    right: -100%;
-    /* transition: all 1s ease; */
-    display: block;
-    opacity: 0;
+    right:0;
+    transition: all 1s ease;
+    
 
 }
 .hidden{
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    animation: sendBackX .7s forwards;
 
 }
 .offcanvas-wrapper{
@@ -52,24 +53,30 @@
 }
 
 .offcanvas-shower{
-    right: 0;
     opacity: 1;
-    display: block;
-
+    animation: bringBackX .7s forwards;
+    pointer-events: all;
     
 }
 
-@keyframes bringOffcanvas{
-    to{
-        right: 0;
-        opacity: 1;
-        display: block;
+@keyframes bringBackX{
+    0%{
+        transform: translateX(600px);
+    }100%{
+        transform: translateX(0px);
     }
 }
 
+@keyframes sendBackX{
+    to{
+        transform: translateX(0px);
+    }
+}
+
+
 /* @media screen and (max-width:700px) {
     .offcanvas{
-        opacity: 1;
         display: block;
+        opacity: 0;
     }
 } */
