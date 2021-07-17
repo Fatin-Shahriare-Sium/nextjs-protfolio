@@ -8,7 +8,7 @@ const SingleProject = ({ name, img, description, tech, link }) => {
         <div style={{ backgroundImage: `url(${img})` }} className='single-project'>
             <div className="single-project-img">
                 <div className='single-project-img__wrapper'>
-                    <Image id='' src={img} height='500' width='700' objectFit='contain' />
+                    <Image id='' src={img} srcset={img} height='500' width='700' objectFit='contain' />
                 </div>
             </div>
             <div className="single-project-details">
