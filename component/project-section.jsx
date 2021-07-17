@@ -22,8 +22,8 @@ const ProjectSection = () => {
         {
             title: 'MERN Task Manager App',
             img: 'https://res.cloudinary.com/sium/image/upload/v1625911901/Screenshot_2021-07-10_at_16-10-26_Task_Manager_1_dziig7.png',
-            description: "A modern web application to maintain daily task.This app's frontEnd is created using Nextjs .For,backend [admin panel/CMS] i use ReactJs,Nodejs,Expressjs and for database MongoDB. ",
-            technologies: ' Reactjs . Chartjs . Nodejs . MongoDB . Expressjs',
+            description: "A multi-user modern web application to maintain daily task.It can visualize percentage of completed and uncompleted tasks using chart.I use Redis for caching data.It is totally a MERN application. ",
+            technologies: ' Reactjs . Nodejs . MongoDB . Expressjs . Chartjs . Redis',
             link: {
                 github: 'https://github.com/Fatin-Shahriare-Sium/mern-task',
                 website: 'https://task-managerx.netlify.app/'
