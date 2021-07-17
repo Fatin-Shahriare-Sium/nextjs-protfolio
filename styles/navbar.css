@@ -27,7 +27,7 @@
     font-weight: 500;
 }
 
-.navbar-link p:hover{
+.navbar-link a:hover{
     color: var(--btn-color);
 }
 
