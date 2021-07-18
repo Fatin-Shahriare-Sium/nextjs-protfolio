@@ -40,19 +40,19 @@ const Hero = () => {
                 <div style={{ marginTop: '1%' }} className="hero-btn">
 
                     <button>
-                        <a href="">
+                        <a target="_blank" href="mailto:sium1206@gmail.com">
                             Get In Touch
                         </a>
                     </button>
 
 
                     <button style={{ marginLeft: '7%' }}>
-                        <a href="">
+                        <a target="_blank" href="https://docs.google.com/document/d/13YUTwRekdP2wpghzztSZV_baL2hAtxaLX2zG86llHyY/edit?usp=sharing">
                             Resume
                         </a>
                     </button>
 
-                    {/* <a href="mailto:sium1206@gmail.com">Mail</a> */}
+
                 </div>
             </div>
         </div>
