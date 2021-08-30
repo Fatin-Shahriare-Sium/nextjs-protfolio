@@ -6,6 +6,7 @@ import terminalW from '../assets/terminalW.svg'
 import databaseW from '../assets/databaseW.svg'
 import colorPalet from '../assets/colorW.svg'
 import missW from '../assets/missW.svg'
+import graphql from '../assets/graphql.svg'
 import bootstrap from '../assets/bootstrap.svg'
 import nextjs from '../assets/nextjs.svg'
 import reactjs from '../assets/react.svg'
@@ -15,6 +16,8 @@ import javascript from '../assets/javascript.svg'
 import expressJs from '../assets/expressjs.svg'
 import current from '../assets/current.svg'
 import sass from '../assets/sass.svg'
+import ts from '../assets/ts.svg'
+
 //Skill Section css in skill-box.css
 const SkillSection = () => {
     let currentStack = [
@@ -24,8 +27,12 @@ const SkillSection = () => {
             skill: 'JavaScript'
         },
         {
-            src: reactjs,
-            skill: 'ReactJs'
+            src: ts,
+            skill: 'TypeScript'
+        },
+        {
+            src: graphql,
+            skill: 'GraphQL'
         },
         {
             src: nextjs,
@@ -58,8 +65,8 @@ const SkillSection = () => {
             <p className='skill-section__subHeader'>In my career of coding/programming,i have learned these technologies :</p>
 
             <div className="skill-container">
-                <SkillBox icon={terminalW} header='Programming Languages' textArray={'Javascript,Java.'} />
-                <SkillBox icon={atomW} header='Libraries & Frameworks' textArray={'Reactjs,Nextjs,Redux,Expressjs,Mongoose,Bootstrap,Jest etc.'} />
+                <SkillBox icon={terminalW} header='Programming Languages' textArray={'JavaScript,TypeScript'} />
+                <SkillBox icon={atomW} header='Libraries & Frameworks' textArray={'Reactjs,Nextjs,GraphQL,Redux,Expressjs,Mongoose,Bootstrap,Jest etc.'} />
                 <SkillBox icon={databaseW} header='Databases' textArray='MongoDB,Firebase,SQLite.' />
                 <SkillBox icon={colorPalet} header='Designing Tools' textArray='Figma,Photoshop,Adobe Illustrator.' />
                 <SkillBox icon={missW} header='miscellaneous' textArray='Cli,Git,Github,Sass,Markdown etc.' />
