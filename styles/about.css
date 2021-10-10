@@ -55,7 +55,7 @@
 }
 .about-text p {
     /* font-size: clamp(); */
-    font-size: clamp(17px,3.3vh,27px);
+    font-size: clamp(19px,3.3vw,23px);
     color: var(--text-color);
 }
 

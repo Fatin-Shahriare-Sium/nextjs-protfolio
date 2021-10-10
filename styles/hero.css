@@ -45,6 +45,7 @@
      background-position-x: 0px;
     animation:  changeBackSize 1s steps(11) forwards,
     textGradient 7s 1.1s linear infinite;
+
 }
 .rotate-span{
     transition: all 1.3s ease;
