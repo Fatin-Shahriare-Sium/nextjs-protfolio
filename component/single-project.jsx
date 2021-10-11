@@ -5,10 +5,10 @@ import GithubIcon from './icon/githubIcon'
 
 const SingleProject = ({ name, img, description, tech, link }) => {
     return (
-        <div style={{ backgroundImage: `url(${img})` }} className='single-project'>
+        <div className='single-project'>
             <div className="single-project-img">
                 <div className='single-project-img__wrapper'>
-                    <Image id='' src={img} srcset={img} height='500' width='700' objectFit='contain' />
+                    <Image src={img} srcset={img} height='500' width='700' objectFit='contain' />
                 </div>
             </div>
             <div className="single-project-details">
