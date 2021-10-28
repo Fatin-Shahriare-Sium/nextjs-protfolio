@@ -3,6 +3,7 @@
 // import SkillSection from "../component/skill-section"
 import Hero from "../component/hero.jsx"
 import About from "../component/about"
+import ContactSection from "../component/contact.jsx"
 import Opener from "../component/opener"
 import { useEffect, useState } from "react"
 import Head from 'next/head'
@@ -18,12 +19,15 @@ export default function Home() {
 
   let [skillSec, setSkillSec] = useState('')
   let [projectSec, setProjectSec] = useState('')
-  let [contact, setContact] = useState('')
-  useEffect(async () => {
+
+
+  useEffect(() => {
 
     setTimeout(() => {
       setExpand(true)
-    }, [3500])
+    }, 3500)
+
+
   }, [])
 
   useEffect(() => {
@@ -40,9 +44,7 @@ export default function Home() {
       import('../component/project-section.jsx').then(({ default: ProjectSection }) => {
         setProjectSec(<ProjectSection />)
       })
-      import('../component/contact.jsx').then(({ default: Contact }) => {
-        setContact(<Contact />)
-      })
+
     }
 
 
@@ -54,6 +56,7 @@ export default function Home() {
     return (
       <div>
         <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link href="/static/logo.png" rel="icon" sizes="32x32" type="image/png" />
           <title>Fatin Shahriare Sium</title>
           <meta content='I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies. 
@@ -75,13 +78,14 @@ export default function Home() {
         <About />
         {skillSec}
         {projectSec}
-        {contact}
+        <ContactSection />
       </div >
     )
   } else {
     return (
       <div>
         <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <link href="/static/logo.png" rel="icon" sizes="56x32" type="image/png" />
           <title>Fatin Shahriare Sium</title>
           <meta content='I am Fatin Shahriare Sium.I have been able to learn web design and development by the grace of Allah.I am professional developer specialized on JavaScript-based technologies.I love to write clean and maintainable code for websites and passionate about learning and exploring new technologies. 

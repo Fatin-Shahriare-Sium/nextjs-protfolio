@@ -11,7 +11,7 @@ const ProjectSection = () => {
     let projectData = [
         {
             title: 'MERN Stack E-commerce',
-            img: ' https://res.cloudinary.com/sium/image/upload/v1625911762/Screenshot_2021-07-10_at_16-02-09_https_nextjs-e-commerce-two_vercel_app_1_ohiumh.png',
+            img: 'https://res.cloudinary.com/sium/image/upload/v1625911762/Screenshot_2021-07-10_at_16-02-09_https_nextjs-e-commerce-two_vercel_app_1_ohiumh.png',
             description: "It is fully functional MERN Stack e-commerce website.This app's frontEnd is created using Nextjs .For,backend [admin panel/CMS] i use ReactJs,Nodejs,Expressjs and for database MongoDB. ",
             technologies: 'Nextjs . Reactjs . Nodejs . MongoDB . Expressjs',
             link: {
@@ -64,7 +64,7 @@ const ProjectSection = () => {
         <div id='project' className='project-section'>
             <p className="project-section__haeder">#Projects</p>
             <div className="project-section__container">
-                {projectData.map((sig, index) => <SingleProject name={sig.title} img={sig.img} description={sig.description} tech={sig.technologies} link={sig.link} />)}
+                {projectData.map((sig, index) => <SingleProject key={index} name={sig.title} img={sig.img} description={sig.description} tech={sig.technologies} link={sig.link} />)}
             </div>
         </div>
     )
